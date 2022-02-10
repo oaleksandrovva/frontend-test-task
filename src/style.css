@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+.flex-container {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.flex-container>div {
+  font: 12px Arial, sans-serif;
+  text-align: center;
+  width: 33.33%;
+}
+
+@media screen and (max-width: 450px) {
+  .flex-container>div {
+    width: 100%;
+  }
+}
